@@ -1,0 +1,2 @@
+catkin_ws/src/ball_chaser:catkin_ws/src/my_robot:navigation_msgs/map_msgs:navigation_msgs/move_base_msgs:rtabmap_ros:teleop_twist_keyboard
+-DCATKIN_DEVEL_PREFIX=/home/darshan/p4/devel -DCMAKE_INSTALL_PREFIX=/home/darshan/p4/install -G Unix Makefiles
