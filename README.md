@@ -1,7 +1,8 @@
 # Make_my_World
 Project 4 of Udacity Robotics Software Engineer Nanodegree Program
-![pic1](https://github.com/anyuguo/Robotics-Software-Engineer-Udacity/blob/master/P4-Map-My-World/screenshot2.JPG)
-![pic2](https://github.com/anyuguo/Robotics-Software-Engineer-Udacity/blob/master/P4-Map-My-World/screenshot.JPG)
+![pic1](https://github.com/darshan6998/Make_my_World/blob/master/screenshots/Screenshot%20from%202020-06-07%2020-45-57.png)
+![pic2](https://github.com/darshan6998/Make_my_World/blob/master/screenshots/Screenshot%20from%202020-06-07%2020-48-22.png)
+![pic3](https://github.com/darshan6998/Make_my_World/blob/master/screenshots/Screenshot%20from%202020-06-07%2021-18-58.png)
 
 ## Overview  
 In this project you will create a 2D occupancy grid and 3D octomap from a simulated environment using your own robot with the RTAB-Map package.  
@@ -14,26 +15,26 @@ For this project we will be using the `rtabmap_ros` package, which is a ROS wrap
 
 ## Prerequisites/Dependencies  
 * Gazebo >= 7.0  
-* ROS Kinetic  
+* ROS Kinetic/Melodic 
 * ROS navigation package  
 ```
-sudo apt-get install ros-kinetic-navigation
+sudo apt-get install ros-kinetic-navigation //Replace kinetic with melodic if using ROS melodic 
 ```
 * ROS map_server package  
 ```
-sudo apt-get install ros-kinetic-map-server
+sudo apt-get install ros-kinetic-map-server //Replace kinetic with melodic if using ROS melodic 
 ```
 * ROS move_base package  
 ```
-sudo apt-get install ros-kinetic-move-base
+sudo apt-get install ros-kinetic-move-base //Replace kinetic with melodic if using ROS melodic 
 ```
 * ROS amcl package  
 ```
-sudo apt-get install ros-kinetic-amcl
+sudo apt-get install ros-kinetic-amcl //Replace kinetic with melodic if using ROS melodic
 ```
 * ROS rtabmap-ros package
 ```
-sudo apt-get install ros-kinetic-rtabmap-ros
+sudo apt-get install ros-kinetic-rtabmap-ros //Replace kinetic with melodic if using ROS melodic
 ```
 * make >= 4.1(mac, linux), 3.81(Windows)
   * Linux: make is installed by default on most Linux distros
@@ -92,7 +93,7 @@ Directory Structure
 │   │   │   │   ├── myworld.world
 │   │   │   ├── CMakeLists.txt                 # compiler instructions
 │   │   │   ├── package.xml                    # package info
-              # package info
+|   |   ├──  rtabmap_ros                       # RTABMAP Package        
 │   │   ├── teleop_twist_keyboard              # teleop_twist_keyboard
 │   │   │   ├── CHANGELOG.rst                  # change log
 │   │   │   ├── CMakeLists.txt                 # compiler instructions
@@ -105,25 +106,6 @@ Directory Structure
 ├── screenshots                            # Screenshots                           # Screenshots
 ├── rtabmap.db
 ```
-- [screenshot.jpg](screenshot.JPG): screenshot1
-- [screenshot2.jpg](screenshot2.JPG): screenshot2
-- [drive_bot.cpp](/catkin_ws/src/ball_chaser/src/drive_bot.cpp): ROS service C++ script, command the robot with specify speeds.  
-- [process_images.cpp](/catkin_ws/src/ball_chaser/src/process_images.cpp): ROS service C++ script, process the camera image and return requested speeds.   
-- [world.launch](/catkin_ws/src/my_gokart/launch/world.launch): Launch my_gokart mode in Gazebo world with building and plugins.    
-- [empty.world](/catkin_ws/src/my_gokart/worlds/empty.world): Gazebo world file that includes nothing.  
-- [myoffice.world](/catkin_ws/src/my_gokart/worlds/myoffice.world): Gazebo world file that includes the models.  
-- [CMakeLists.txt](/catkin_ws/src/my_gokart/CMakeLists.txt): File to link the C++ code to libraries.  
-- [robot_description.launch](/catkin_ws/src/my_robot/launch/robot_description.launch): Create robot model in Gazebo world.  
-- [hokuyo.dae](/catkin_ws/src/my_robot/meshes/hokuyo.dae): Hokuyo LiDAR sensor mesh model.  
-- [my_robot.gazebo](/catkin_ws/src/my_robot/urdf/my_robot.gazebo): Define my_robot URDF model plugins.  
-- [my_robot.xacro](/catkin_ws/src/my_robot/urdf/my_robot.xacro): Define my_robot URDF model.  
-- [amcl.launch](/catkin_ws/src/my_robot/launch/amcl.launch): Launch AMCL node
-- [map.pgm](/catkin_ws/src/my_robot/maps/map.pgm): Generated myoffice map
-- [map.yaml](/catkin_ws/src/my_robot/maps/map.yaml): Info for myoffice map
-- [default.rviz](/catkin_ws/src/my_robot/rviz/default.rviz): Default rviz
-- [map.pgm](/catkin_ws/src/pgm_map_creator/maps/map.pgm): Generated myoffice map
-- [localization.launch](/catkin_ws/src/my_robot/launch/localization.launch): Launch localization node
-- [mapping.launch](/catkin_ws/src/my_robot/launch/mapping.launch): Launch mapping node
 
 ## Run the project  
 * Clone this repository
