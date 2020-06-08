@@ -71,11 +71,6 @@ Directory Structure
 │   │   │   ├── CMakeLists.txt                 # compiler instructions
 │   │   │   ├── package.xml                    # package info
 │   │   ├── my_robot                           # my_robot package        
-│   │   │   ├── config                         # config folder for configuration files   
-│   │   │   │   ├── base_local_planner_params.yaml
-│   │   │   │   ├── costmap_common_params.yaml
-│   │   │   │   ├── global_costmap_params.yaml
-│   │   │   │   ├── local_costmap_params.yaml
 │   │   │   ├── launch                         # launch folder for launch files   
 │   │   │   │   ├── robot_description.launch
 │   │   │   │   ├── world.launch
