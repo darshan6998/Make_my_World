@@ -95,9 +95,6 @@ Directory Structure
 │   │   │   ├── README.md                      # README for documentation
 │   │   │   ├── package.xml                    # package info
 │   │   │   ├── teleop_twist_keyboard.py       # keyboard controller
-├── my_ball                                    # Model files 
-│   ├── model.config
-│   ├── model.sdf
 ├── screenshots                            # Screenshots                           # Screenshots
 ├── rtabmap.db
 ```
